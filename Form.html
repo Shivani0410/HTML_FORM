@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registration Form</title>
+    <style type="text/css">
+      label {
+        width: 200px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body bgcolor="#FFA07A">
+    <h1 align="center">Registration Form</h1>
+      <hr size="5%" color="black" width="40%" />
+      <br /><br />
+    <table align="center">
+      <form>
+        <tr>
+          <td>
+            <label>Enter Your Name :</label>
+            <input type="text" name="name" placeholder="Enter your name"/>
+            <label>Enter Father's Name : </label>
+            <input type="text" name="name" placeholder="Enter your father's name"/>
+            <label>Enter Mother's Name : </label>
+            <input type="text" name="name" placeholder="Enter your mother's name"/>
+          <br><br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Enter Email : </label>
+            <input type="email" name="email" placeholder="Enter your email"/>
+            <label>Enter Password : </label>
+            <input type="password" name="password1 " placeholder="Enter password"/>
+            <label>Confirm Password : </label>
+            <input type="password" name="password2 " placeholder="Confirm password"/>
+            <br><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label>Enter Phone Number : </label>
+            <select>
+            <option>+91</option>
+            <option>+93</option>
+            <option>+61</option>
+            <option>+54</option>
+            </select>
+            <input type="tel" name="phone" size="13" placeholder="Enter phone number" pattern="[0-9]{10}"/>
+            <label>Aadhaar number : </label>
+            <input type="number" placeholder="Aadhaar number" />
+            <label>Facebook url : </label>
+            <input type="url" placeholder="Facebook url" />
+            <br><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label>Address : </label>
+            <textarea placeholder="Address" rows="4" cols="126"></textarea>
+            <br><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label>Select State : </label>
+            <select>
+            <option>Madhya Pradesh &nbsp;&nbsp;&nbsp;</option>
+            <option>Assam  </option>
+            <option>Bihar  </option>
+            <option>Chhattisgarh</option>
+            <option>Gujarat </option></select>
+            <label align="center">PinCode : </label>
+            <input type="number" placeholder="PinCode" />
+            <br><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label>Select Your Gender : </label>
+            <input type="radio" name="gender" value="male" />Male
+            <input type="radio" name="gender" value="female" />Female &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label align="center">Date Of Birth : </label>
+            <input type="date" name="birth"/>
+            <br><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label>Age<br>(between 18 and 25) : </label>
+            <input type="number" name="age" min="18" max="25">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label align="right">Select your favorite color : </label>
+            <input type="color" name="favcolor" value="#ff0000">
+            <br><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label>Your School Passing month and year : </label>
+            <input type="month" name="month_year">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="subj" align="right">Subject : </label>
+            <select name="subj" size="5" multiple>
+            <option value="BCA">BCA</option>
+            <option value="MCA">MCA</option>
+            <option value="BSC">BSC</option>
+            <option value="B.com">B.com</option>
+            <option value="BA">BA</option>
+            </select>
+            <br><br>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <label for="myfile">Upload your passport size photo : </label>
+            <input type="file" name="myfile">
+            <br><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="Registration_Date_Time">Registration Date and Time : </label>
+            <input type="datetime-local" name="Registration_Date_Time">
+            <br><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="appt">Select a time : </label>
+            <input type="time" name="appt">
+            <br><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="checkbox"> I agree to the <a class="Terms" href="#T1">Terms and condition</a>
+            <p id="T1"> Terms and condition Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo hic
+            dignissimos nam magni sunt dolorum <br> accusamus tempore magnam id dolorem rem, cum ducimus ipsam consectetur, odio illo sit at 
+            necessitatibus.</p>
+            <br><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <button type="submit" onclick="alert('successfully submitted')">Submit</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="reset" onclick="alert('successfully reseted')">Reset</button>
+            <br><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+                <div class="container">
+                Time now is <span id="time"></span>
+                </div>
+                <script>
+                console.log("This is tutorial 58");
+                function greet(name, byeText){
+                    console.log("Hello Good Morning" + name + " " + byeText);
+                }
+                function displayTime(){
+                    time = new Date();
+                    console.log(time);
+                    document.getElementById('time').innerHTML = time;
+                }
+                setInterval(displayTime, 1000);
+                </script>
+          </td>
+        </tr>       
+      </form>
+    </table> 
+    <br><br> 
+  </body>       
+</html>
